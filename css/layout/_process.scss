@@ -1,0 +1,29 @@
+#process {
+  height: 70vh;
+  text-align: center;
+
+  h2 {
+    align-self: center;
+  }
+
+  #process-sections {
+    display: flex;
+    justify-content: space-around;
+    height: 40vh;
+    #ideation {
+      width: 28%;
+
+
+    }
+    #design {
+      width: 28%;
+
+    }
+    #tools {
+      width: 28%;
+
+    }
+  }
+
+
+}
