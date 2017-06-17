@@ -5,6 +5,11 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+.process-section-styles, #process #process-sections #ideation, #process #process-sections #design, #process #process-sections #tools {
+  width: 28%; }
+  .process-section-styles img, #process #process-sections #ideation img, #process #process-sections #design img, #process #process-sections #tools img {
+    background-color: darkgrey; }
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -395,5 +400,66 @@ template {
  */
 [hidden] {
   display: none; }
+
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  text-align: center;
+  background-image: url("../img/swirl_pattern.png");
+  border-bottom: 3px solid darkgrey; }
+  #home img {
+    height: 250px;
+    border: 8px solid white;
+    border-radius: 100%; }
+
+#nav {
+  width: 100%;
+  position: fixed; }
+  #nav ul {
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    #nav ul li {
+      display: inline; }
+      #nav ul li a {
+        color: black;
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px; }
+
+#process {
+  height: 70vh;
+  text-align: center; }
+  #process h2 {
+    margin-top: 0px;
+    padding-top: 50px; }
+  #process #process-sections {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    height: 40vh; }
+    #process #process-sections #design {
+      display: flex; }
+      #process #process-sections #design .process-borders {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        background-color: darkgrey; }
+
+#portfolio {
+  background-color: darkgrey; }
+  #portfolio #project-1-card {
+    background-color: red; }
+  #portfolio #project-2-card {
+    background-color: red; }
+  #portfolio #project-3-card {
+    background-color: red; }
+
+#contact {
+  background-color: aqua; }
 
 /*# sourceMappingURL=output.css.map */

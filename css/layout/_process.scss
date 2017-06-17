@@ -3,27 +3,33 @@
   text-align: center;
 
   h2 {
-    align-self: center;
+    margin-top: 0px;
+    padding-top: 50px;
   }
 
   #process-sections {
+    padding-top: 50px;
     display: flex;
     justify-content: space-around;
     height: 40vh;
     #ideation {
-      width: 28%;
-
+      @extend .process-section-styles;
 
     }
     #design {
-      width: 28%;
+      display: flex;
+      @extend .process-section-styles;
+      .process-borders {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        background-color: darkgrey;
+      }
 
     }
     #tools {
-      width: 28%;
+      @extend .process-section-styles;
 
     }
   }
-
-
 }
