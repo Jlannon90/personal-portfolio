@@ -442,6 +442,10 @@ template {
 [hidden] {
   display: none; }
 
+#contact {
+  height: 50vh;
+  text-align: center; }
+
 #home {
   display: flex;
   justify-content: center;
@@ -510,18 +514,6 @@ template {
     #process #process-sections #tools p {
       text-align: left;
       font-family: 'Rubik', sans-serif; }
-
-#portfolio {
-  background-color: darkgrey; }
-  #portfolio #project-1-card {
-    background-color: red; }
-  #portfolio #project-2-card {
-    background-color: red; }
-  #portfolio #project-3-card {
-    background-color: red; }
-
-#contact {
-  background-color: aqua; }
 
 #work {
   height: 50vh;
