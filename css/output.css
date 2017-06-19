@@ -455,13 +455,18 @@ template {
     border-radius: 10rem;
     align-self: center;
     border: none;
+    transition: transform .5s;
     -webkit-filter: drop-shadow(2px 2px 5px #222);
     filter: drop-shadow(2px 2px 5px #222);
     background-color: #FDFFFC;
     border: 8px solid #FFD166;
-    color: #011627;
     font-size: 50px;
     font-family: 'Rubik', serif; }
+    #contact button a {
+      text-decoration: none;
+      color: #011627; }
+    #contact button:hover {
+      transform: scale(1.05, 1.05); }
   #contact ul {
     width: 100%;
     text-align: center;
@@ -473,7 +478,9 @@ template {
       #contact ul li a {
         display: inline-block;
         text-decoration: none;
-        padding: 10px; }
+        padding: 10px;
+        font-size: 35px;
+        color: #011627; }
 
 #home {
   display: flex;
