@@ -6,6 +6,9 @@
   @include tablet-breakpoint {
     height: 80vh;
   }
+  @include phone-breakpoint {
+    height: 110vh;
+  }
 
   h2 {
     margin-top: 0px;
@@ -14,6 +17,10 @@
     @include tablet-breakpoint {
       font-size: 30px;
     }
+    @include phone-breakpoint {
+      font-size: 25px;
+      margin-bottom: 0;
+    }
   }
   #work-sections {
     padding-top: 50px;
@@ -21,6 +28,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     height: 40vh;
+
     h4 {
       font-size: 30px;
       @include tablet-breakpoint {

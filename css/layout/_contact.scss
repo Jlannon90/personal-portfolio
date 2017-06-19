@@ -11,6 +11,9 @@
     @include tablet-breakpoint {
       font-size: 30px;
     }
+    @include phone-breakpoint {
+      font-size: 25px;
+    }
   }
 
   button{
@@ -26,6 +29,11 @@
     border: 8px solid $darkyellow;
     font-size: 50px;
     font-family: 'Rubik', serif;
+    @include phone-breakpoint {
+      width: 300px;
+      height: 100px;
+      font-size: 20px;
+    }
     a {
       text-decoration: none;
       color: $darkblue;

@@ -19,6 +19,9 @@
         &:hover {
           color: $darkyellow;
         }
+        @include phone-breakpoint {
+          font-size: 14px;
+        }
       }
     }
   }

@@ -25,10 +25,6 @@ body {
   background-color: #FFD166;
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px #222); }
-  @media only screen and (max-width: 1156px) {
-    .process-images, #process #process-sections #ideation #ideation-image, #process #process-sections #design #design-image, #process #process-sections #tools #tools-image {
-      width: 200px;
-      height: 200px; } }
 
 .work-images, #work #work-sections #project-1-card #project-1-img, #work #work-sections #project-2-card #project-2-img, #work #work-sections #project-3-card #project-3-img {
   background-size: contain;
@@ -460,6 +456,9 @@ template {
     @media only screen and (max-width: 1156px) {
       #contact h2 {
         font-size: 30px; } }
+    @media only screen and (max-width: 776px) {
+      #contact h2 {
+        font-size: 25px; } }
   #contact button {
     width: 600px;
     height: 150px;
@@ -473,6 +472,11 @@ template {
     border: 8px solid #FFD166;
     font-size: 50px;
     font-family: 'Rubik', serif; }
+    @media only screen and (max-width: 776px) {
+      #contact button {
+        width: 300px;
+        height: 100px;
+        font-size: 20px; } }
     #contact button a {
       text-decoration: none;
       color: #011627; }
@@ -511,11 +515,17 @@ template {
     @media only screen and (max-width: 1156px) {
       #home h1 {
         font-size: 50px; } }
+    @media only screen and (max-width: 776px) {
+      #home h1 {
+        font-size: 30px; } }
   #home h2 {
     font-size: 50px; }
     @media only screen and (max-width: 1156px) {
       #home h2 {
         font-size: 30px; } }
+    @media only screen and (max-width: 776px) {
+      #home h2 {
+        font-size: 15px; } }
   #home img {
     height: 250px;
     border: 8px solid #FDFFFC;
@@ -546,10 +556,16 @@ template {
         padding: 10px; }
         #nav ul li a:hover {
           color: #FFD166; }
+        @media only screen and (max-width: 776px) {
+          #nav ul li a {
+            font-size: 14px; } }
 
 #process {
-  height: 170vh;
+  height: 80vh;
   text-align: center; }
+  @media only screen and (max-width: 1156px) {
+    #process {
+      height: 170vh; } }
   #process h2 {
     margin-top: 0px;
     padding-top: 50px;
@@ -558,6 +574,9 @@ template {
     @media only screen and (max-width: 1156px) {
       #process h2 {
         font-size: 30px; } }
+    @media only screen and (max-width: 776px) {
+      #process h2 {
+        font-size: 25px; } }
   #process #process-sections {
     padding-top: 50px;
     display: flex;
@@ -609,6 +628,9 @@ template {
   @media only screen and (max-width: 1156px) {
     #work {
       height: 80vh; } }
+  @media only screen and (max-width: 776px) {
+    #work {
+      height: 110vh; } }
   #work h2 {
     margin-top: 0px;
     padding-top: 50px;
@@ -616,6 +638,10 @@ template {
     @media only screen and (max-width: 1156px) {
       #work h2 {
         font-size: 30px; } }
+    @media only screen and (max-width: 776px) {
+      #work h2 {
+        font-size: 25px;
+        margin-bottom: 0; } }
   #work #work-sections {
     padding-top: 50px;
     display: flex;

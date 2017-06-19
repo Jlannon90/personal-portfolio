@@ -13,11 +13,17 @@
     @include tablet-breakpoint {
       font-size: 50px;
     }
+    @include phone-breakpoint {
+    font-size: 30px;
+    }
   }
   h2{
     font-size: 50px;
     @include tablet-breakpoint {
       font-size: 30px;
+    }
+    @include phone-breakpoint {
+      font-size: 15px;
     }
   }
   img {

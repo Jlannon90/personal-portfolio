@@ -1,6 +1,9 @@
 #process {
-  height: 170vh;
+  height: 80vh;
   text-align: center;
+  @include tablet-breakpoint {
+    height: 170vh;
+  }
 
   h2 {
     margin-top: 0px;
@@ -9,6 +12,9 @@
     font-size: 50px;
     @include tablet-breakpoint {
       font-size: 30px;
+    }
+    @include phone-breakpoint {
+      font-size: 25px;
     }
   }
 
