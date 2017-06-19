@@ -1,5 +1,40 @@
 #contact {
   height: 50vh;
   text-align: center;
+  color: $darkblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
+  button{
+    width: 600px;
+    height: 150px;
+    border-radius: 10rem;
+    align-self: center;
+    border: none;
+    -webkit-filter: drop-shadow(2px 2px 5px #222);
+    filter: drop-shadow(2px 2px 5px #222);
+    background-color: $offwhite;
+    border: 8px solid $darkyellow;
+    color: $darkblue;
+    font-size: 50px;
+    font-family: 'Rubik', serif;
+  }
+
+  ul {
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline;
+      a {
+
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px;
+      }
+    }
+  }
 }
