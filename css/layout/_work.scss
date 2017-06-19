@@ -1,5 +1,5 @@
 #work {
-  height: 55vh;
+  height: 65vh;
   text-align: center;
   color: $darkblue;
   background-color: $darkyellow;
@@ -7,13 +7,21 @@
   h2 {
     margin-top: 0px;
     padding-top: 50px;
+    font-size: 50px;
   }
   #work-sections {
     padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    height: 32vh;
+    height: 40vh;
+    h4 {
+      font-size: 30px;
+    }
+    a{
+      text-decoration: none;
+      color: $darkblue;
+    }
 
     #project-1-card {
       @extend .section-styles;

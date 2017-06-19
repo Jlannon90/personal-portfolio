@@ -6,6 +6,7 @@ body {
   width: 28%;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 .process-images {
@@ -33,7 +34,7 @@ body {
 
 .project-text {
   display: none;
-  background-color: rgba(46,196,182,0.4);
+  background-color: rgba(1,22,39,0.6);
   height: 180px;
   width: 364px;
   padding-top: 1px;

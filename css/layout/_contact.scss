@@ -1,10 +1,14 @@
 #contact {
   height: 50vh;
   text-align: center;
-  color: $darkblue;
+  color: $offwhite;
+  background-color: $darkblue;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  h2 {
+    font-size: 50px;
+  }
 
   button{
     width: 600px;
@@ -25,6 +29,11 @@
     }
     &:hover {
       transform: scale(1.05, 1.05);
+      background-color: $darkyellow;
+
+    }
+    &:focus {
+      outline-color: rgba(253,255,252,0.1);
     }
 
   }
@@ -42,7 +51,7 @@
         text-decoration: none;
         padding: 10px;
         font-size: 35px;
-        color: $darkblue;
+        color: $offwhite;
       }
     }
   }

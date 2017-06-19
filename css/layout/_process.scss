@@ -1,19 +1,23 @@
 #process {
-  height: 70vh;
+  height: 80vh;
   text-align: center;
 
   h2 {
     margin-top: 0px;
     padding-top: 50px;
     color: $darkblue;
+    font-size: 50px;
   }
 
   #process-sections {
     padding-top: 50px;
     display: flex;
     justify-content: space-around;
-    height: 50vh;
+    height: 55vh;
     color: $darkblue;
+    h3 {
+      font-size: 30px;
+    }
     #ideation {
       @extend .section-styles;
       #ideation-image {
