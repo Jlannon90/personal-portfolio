@@ -1,0 +1,63 @@
+#work {
+  height: 70vh;
+  text-align: center;
+  border-bottom: 3px solid darkgrey;
+
+  h2 {
+    margin-top: 0px;
+    padding-top: 50px;
+  }
+  #work-sections {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+    #project-1-card {
+      @extend .section-styles;
+      width: 380px;
+      #project-1-img {
+        background-image: url('../img/miyazaki.png');
+        @extend .work-images;
+      }
+    }
+
+    #project-2-card {
+      @extend .section-styles;
+      width: 380px;
+      #project-2-img {
+        background-image: url('../img/peach.png');
+        @extend .work-images;
+      }
+
+    }
+
+    #project-3-card {
+      @extend .section-styles;
+      width: 380px;
+      #project-3-img {
+        background-image: url('../img/packlandia.png');
+        @extend .work-images;
+      }
+
+    }
+
+  }
+}
+
+#project-1-card {
+  #project-1-text {
+    @extend .project-text;
+  }
+}
+
+#project-2-card {
+  #project-2-text {
+    @extend .project-text;
+  }
+}
+
+#project-3-card {
+  #project-3-text {
+    @extend .project-text;
+  }
+}

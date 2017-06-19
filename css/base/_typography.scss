@@ -1,6 +1,38 @@
-.process-section-styles {
+.section-styles {
   width: 28%;
-  img {
-    background-color: darkgrey;
+  display: flex;
+  flex-direction: column;
+}
+
+.process-images {
+  align-self: center;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-color: darkgrey;
+}
+
+.work-images {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 180px;
+}
+
+
+.project-text {
+  display: none;
+  background-color: rgba(253,255,252,0.4);
+  height: 180px;
+  width: 361px;
+  padding-top: 1px;
+  margin-left: 10px;
+
+  ul {
+    list-style: none;
+    text-align: left;
   }
 }

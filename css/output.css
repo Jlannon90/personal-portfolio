@@ -5,10 +5,37 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.process-section-styles, #process #process-sections #ideation, #process #process-sections #design, #process #process-sections #tools {
-  width: 28%; }
-  .process-section-styles img, #process #process-sections #ideation img, #process #process-sections #design img, #process #process-sections #tools img {
-    background-color: darkgrey; }
+.section-styles, #process #process-sections #ideation, #process #process-sections #design, #process #process-sections #tools, #work #work-sections #project-1-card, #work #work-sections #project-2-card, #work #work-sections #project-3-card {
+  width: 28%;
+  display: flex;
+  flex-direction: column; }
+
+.process-images, #process #process-sections #ideation #ideation-image, #process #process-sections #design #design-image, #process #process-sections #tools #tools-image {
+  align-self: center;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-color: darkgrey; }
+
+.work-images, #work #work-sections #project-1-card #project-1-img, #work #work-sections #project-2-card #project-2-img, #work #work-sections #project-3-card #project-3-img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 180px; }
+
+.project-text, #project-1-card #project-1-text, #project-2-card #project-2-text, #project-3-card #project-3-text {
+  display: none;
+  background-color: rgba(253, 255, 252, 0.4);
+  height: 180px;
+  width: 361px;
+  padding-top: 1px;
+  margin-left: 10px; }
+  .project-text ul, #project-1-card #project-1-text ul, #project-2-card #project-2-text ul, #project-3-card #project-3-text ul {
+    list-style: none;
+    text-align: left; }
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -416,7 +443,8 @@ template {
 
 #nav {
   width: 100%;
-  position: fixed; }
+  position: fixed;
+  background-color: darkgrey; }
   #nav ul {
     width: 100%;
     text-align: center;
@@ -433,7 +461,8 @@ template {
 
 #process {
   height: 70vh;
-  text-align: center; }
+  text-align: center;
+  border-bottom: 3px solid darkgrey; }
   #process h2 {
     margin-top: 0px;
     padding-top: 50px; }
@@ -441,14 +470,19 @@ template {
     padding-top: 50px;
     display: flex;
     justify-content: space-around;
-    height: 40vh; }
-    #process #process-sections #design {
-      display: flex; }
-      #process #process-sections #design .process-borders {
-        width: 60px;
-        height: 60px;
-        border-radius: 100%;
-        background-color: darkgrey; }
+    height: 50vh; }
+    #process #process-sections #ideation #ideation-image {
+      background-image: url("../img/lightbulb.png"); }
+    #process #process-sections #ideation p {
+      text-align: left; }
+    #process #process-sections #design #design-image {
+      background-image: url("../img/tools.png"); }
+    #process #process-sections #design p {
+      text-align: left; }
+    #process #process-sections #tools #tools-image {
+      background-image: url("../img/computer.png"); }
+    #process #process-sections #tools p {
+      text-align: left; }
 
 #portfolio {
   background-color: darkgrey; }
@@ -461,5 +495,30 @@ template {
 
 #contact {
   background-color: aqua; }
+
+#work {
+  height: 70vh;
+  text-align: center;
+  border-bottom: 3px solid darkgrey; }
+  #work h2 {
+    margin-top: 0px;
+    padding-top: 50px; }
+  #work #work-sections {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    height: 50vh; }
+    #work #work-sections #project-1-card {
+      width: 380px; }
+      #work #work-sections #project-1-card #project-1-img {
+        background-image: url("../img/miyazaki.png"); }
+    #work #work-sections #project-2-card {
+      width: 380px; }
+      #work #work-sections #project-2-card #project-2-img {
+        background-image: url("../img/peach.png"); }
+    #work #work-sections #project-3-card {
+      width: 380px; }
+      #work #work-sections #project-3-card #project-3-img {
+        background-image: url("../img/packlandia.png"); }
 
 /*# sourceMappingURL=output.css.map */

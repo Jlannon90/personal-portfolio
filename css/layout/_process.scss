@@ -1,6 +1,7 @@
 #process {
   height: 70vh;
   text-align: center;
+  border-bottom: 3px solid darkgrey;
 
   h2 {
     margin-top: 0px;
@@ -11,25 +12,38 @@
     padding-top: 50px;
     display: flex;
     justify-content: space-around;
-    height: 40vh;
+    height: 50vh;
     #ideation {
-      @extend .process-section-styles;
-
-    }
-    #design {
-      display: flex;
-      @extend .process-section-styles;
-      .process-borders {
-        width: 60px;
-        height: 60px;
-        border-radius: 100%;
-        background-color: darkgrey;
+      @extend .section-styles;
+      #ideation-image {
+        background-image: url('../img/lightbulb.png');
+        @extend .process-images;
       }
-
+      p {
+        text-align: left;
+      }
     }
-    #tools {
-      @extend .process-section-styles;
 
+    #design {
+      @extend .section-styles;
+      #design-image {
+        background-image: url('../img/tools.png');
+        @extend .process-images;
+      }
+      p {
+        text-align: left;
+      }
+    }
+
+    #tools {
+      @extend .section-styles;
+      #tools-image {
+        background-image: url('../img/computer.png');
+        @extend .process-images;
+      }
+      p {
+        text-align: left;
+      }
     }
   }
 }
