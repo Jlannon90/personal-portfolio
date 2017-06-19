@@ -1,3 +1,7 @@
+body {
+  font-family: 'Libre Baskerville', serif;
+}
+
 .section-styles {
   width: 28%;
   display: flex;
@@ -12,7 +16,9 @@
   width: 200px;
   height: 200px;
   border-radius: 100%;
-  background-color: darkgrey;
+  background-color: $darkyellow;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
 }
 
 .work-images {
@@ -20,19 +26,28 @@
   background-repeat: no-repeat;
   background-position: center;
   height: 180px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
 }
 
 
 .project-text {
   display: none;
-  background-color: rgba(253,255,252,0.4);
+  background-color: rgba(46,196,182,0.4);
   height: 180px;
   width: 361px;
   padding-top: 1px;
   margin-left: 10px;
-
+  color: $offwhite;
+  text-shadow: 2px 2px 2px $darkblue;
+  border-radius: 2px;
+  h5 {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
   ul {
     list-style: none;
     text-align: left;
+    font-family: 'Rubik', sans-serif;
   }
 }

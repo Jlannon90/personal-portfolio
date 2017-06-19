@@ -1,7 +1,8 @@
 #work {
-  height: 70vh;
+  height: 50vh;
   text-align: center;
-  border-bottom: 3px solid darkgrey;
+  border-bottom: 8px solid $darkblue;
+  color: $darkblue;
 
   h2 {
     margin-top: 0px;
@@ -10,8 +11,10 @@
   #work-sections {
     padding-top: 50px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    height: 50vh;
+    height: 32vh;
+
     #project-1-card {
       @extend .section-styles;
       width: 380px;
@@ -38,9 +41,7 @@
         background-image: url('../img/packlandia.png');
         @extend .work-images;
       }
-
     }
-
   }
 }
 

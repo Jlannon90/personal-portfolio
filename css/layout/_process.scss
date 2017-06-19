@@ -1,11 +1,12 @@
 #process {
   height: 70vh;
   text-align: center;
-  border-bottom: 3px solid darkgrey;
+  border-bottom: 8px solid $darkblue;
 
   h2 {
     margin-top: 0px;
     padding-top: 50px;
+    color: $darkblue;
   }
 
   #process-sections {
@@ -13,6 +14,7 @@
     display: flex;
     justify-content: space-around;
     height: 50vh;
+    color: $darkblue;
     #ideation {
       @extend .section-styles;
       #ideation-image {
@@ -21,6 +23,7 @@
       }
       p {
         text-align: left;
+        font-family: 'Rubik', sans-serif;
       }
     }
 
@@ -32,6 +35,7 @@
       }
       p {
         text-align: left;
+        font-family: 'Rubik', sans-serif;
       }
     }
 
@@ -43,6 +47,7 @@
       }
       p {
         text-align: left;
+        font-family: 'Rubik', sans-serif;
       }
     }
   }

@@ -5,10 +5,18 @@
   height: 70vh;
   text-align: center;
   background-image: url('../img/swirl_pattern.png');
-  border-bottom: 3px solid darkgrey;
+  background-color: rgba(1,22,39,0.8);
+  background-blend-mode: overlay;
+  border-bottom: 8px solid $darkblue;
+  color: $offwhite;
   img {
     height: 250px;
-    border: 8px solid white;
+    border: 8px solid $offwhite;
     border-radius: 100%;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+  }
+  h2 {
+    font-family: 'Rubik', sans-serif;
   }
 }
