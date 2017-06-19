@@ -8,6 +8,9 @@
   justify-content: space-between;
   h2 {
     font-size: 50px;
+    @include tablet-breakpoint {
+      font-size: 30px;
+    }
   }
 
   button{

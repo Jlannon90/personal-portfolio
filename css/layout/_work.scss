@@ -3,11 +3,17 @@
   text-align: center;
   color: $darkblue;
   background-color: $darkyellow;
+  @include tablet-breakpoint {
+    height: 80vh;
+  }
 
   h2 {
     margin-top: 0px;
     padding-top: 50px;
     font-size: 50px;
+    @include tablet-breakpoint {
+      font-size: 30px;
+    }
   }
   #work-sections {
     padding-top: 50px;
@@ -17,6 +23,9 @@
     height: 40vh;
     h4 {
       font-size: 30px;
+      @include tablet-breakpoint {
+        font-size: 20px;
+      }
     }
     a{
       text-decoration: none;

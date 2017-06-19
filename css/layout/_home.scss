@@ -10,9 +10,15 @@
   color: $offwhite;
   h1 {
     font-size: 70px;
+    @include tablet-breakpoint {
+      font-size: 50px;
+    }
   }
   h2{
     font-size: 50px;
+    @include tablet-breakpoint {
+      font-size: 30px;
+    }
   }
   img {
     height: 250px;
@@ -20,5 +26,8 @@
     border-radius: 100%;
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
+    @include tablet-breakpoint {
+      height: 200px;
+    }
   }
 }

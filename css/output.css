@@ -25,6 +25,10 @@ body {
   background-color: #FFD166;
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px #222); }
+  @media only screen and (max-width: 1156px) {
+    .process-images, #process #process-sections #ideation #ideation-image, #process #process-sections #design #design-image, #process #process-sections #tools #tools-image {
+      width: 200px;
+      height: 200px; } }
 
 .work-images, #work #work-sections #project-1-card #project-1-img, #work #work-sections #project-2-card #project-2-img, #work #work-sections #project-3-card #project-3-img {
   background-size: contain;
@@ -453,6 +457,9 @@ template {
   justify-content: space-between; }
   #contact h2 {
     font-size: 50px; }
+    @media only screen and (max-width: 1156px) {
+      #contact h2 {
+        font-size: 30px; } }
   #contact button {
     width: 600px;
     height: 150px;
@@ -501,14 +508,23 @@ template {
   color: #FDFFFC; }
   #home h1 {
     font-size: 70px; }
+    @media only screen and (max-width: 1156px) {
+      #home h1 {
+        font-size: 50px; } }
   #home h2 {
     font-size: 50px; }
+    @media only screen and (max-width: 1156px) {
+      #home h2 {
+        font-size: 30px; } }
   #home img {
     height: 250px;
     border: 8px solid #FDFFFC;
     border-radius: 100%;
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222); }
+    @media only screen and (max-width: 1156px) {
+      #home img {
+        height: 200px; } }
 
 #nav {
   width: 100%;
@@ -532,46 +548,74 @@ template {
           color: #FFD166; }
 
 #process {
-  height: 80vh;
+  height: 170vh;
   text-align: center; }
   #process h2 {
     margin-top: 0px;
     padding-top: 50px;
     color: #011627;
     font-size: 50px; }
+    @media only screen and (max-width: 1156px) {
+      #process h2 {
+        font-size: 30px; } }
   #process #process-sections {
     padding-top: 50px;
     display: flex;
     justify-content: space-around;
     height: 55vh;
     color: #011627; }
+    @media only screen and (max-width: 1156px) {
+      #process #process-sections {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 150vh; } }
     #process #process-sections h3 {
       font-size: 30px; }
+      @media only screen and (max-width: 1156px) {
+        #process #process-sections h3 {
+          font-size: 20px;
+          align-self: flex-start; } }
     #process #process-sections #ideation #ideation-image {
       background-image: url("../img/lightbulb.png"); }
     #process #process-sections #ideation p {
       text-align: left;
       font-family: 'Rubik', sans-serif; }
+    @media only screen and (max-width: 1156px) {
+      #process #process-sections #ideation {
+        width: 90%; } }
     #process #process-sections #design #design-image {
       background-image: url("../img/tools.png"); }
     #process #process-sections #design p {
       text-align: left;
       font-family: 'Rubik', sans-serif; }
+    @media only screen and (max-width: 1156px) {
+      #process #process-sections #design {
+        width: 90%; } }
     #process #process-sections #tools #tools-image {
       background-image: url("../img/computer.png"); }
     #process #process-sections #tools p {
       text-align: left;
       font-family: 'Rubik', sans-serif; }
+    @media only screen and (max-width: 1156px) {
+      #process #process-sections #tools {
+        width: 90%; } }
 
 #work {
   height: 65vh;
   text-align: center;
   color: #011627;
   background-color: #FFD166; }
+  @media only screen and (max-width: 1156px) {
+    #work {
+      height: 80vh; } }
   #work h2 {
     margin-top: 0px;
     padding-top: 50px;
     font-size: 50px; }
+    @media only screen and (max-width: 1156px) {
+      #work h2 {
+        font-size: 30px; } }
   #work #work-sections {
     padding-top: 50px;
     display: flex;
@@ -580,6 +624,9 @@ template {
     height: 40vh; }
     #work #work-sections h4 {
       font-size: 30px; }
+      @media only screen and (max-width: 1156px) {
+        #work #work-sections h4 {
+          font-size: 20px; } }
     #work #work-sections a {
       text-decoration: none;
       color: #011627; }

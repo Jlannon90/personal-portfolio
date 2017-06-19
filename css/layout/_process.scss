@@ -1,5 +1,5 @@
 #process {
-  height: 80vh;
+  height: 170vh;
   text-align: center;
 
   h2 {
@@ -7,6 +7,9 @@
     padding-top: 50px;
     color: $darkblue;
     font-size: 50px;
+    @include tablet-breakpoint {
+      font-size: 30px;
+    }
   }
 
   #process-sections {
@@ -15,8 +18,18 @@
     justify-content: space-around;
     height: 55vh;
     color: $darkblue;
+    @include tablet-breakpoint {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 150vh;
+    }
     h3 {
       font-size: 30px;
+      @include tablet-breakpoint {
+        font-size: 20px;
+        align-self: flex-start;
+      }
     }
     #ideation {
       @extend .section-styles;
@@ -27,6 +40,9 @@
       p {
         text-align: left;
         font-family: 'Rubik', sans-serif;
+      }
+      @include tablet-breakpoint {
+        width: 90%;
       }
     }
 
@@ -40,6 +56,9 @@
         text-align: left;
         font-family: 'Rubik', sans-serif;
       }
+      @include tablet-breakpoint {
+        width: 90%;
+      }
     }
 
     #tools {
@@ -51,6 +70,9 @@
       p {
         text-align: left;
         font-family: 'Rubik', sans-serif;
+      }
+      @include tablet-breakpoint {
+        width: 90%;
       }
     }
   }
